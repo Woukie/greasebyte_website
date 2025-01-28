@@ -5,6 +5,7 @@ import MorphingText from '@/components/MorphingText.vue'
 <template>
   <div>
     <span>Services<br />We specialise in four main categories</span>
+    <p></p>
     <MorphingText
       :text="[
         'Critical infastructure',
