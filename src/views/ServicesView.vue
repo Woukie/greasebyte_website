@@ -10,13 +10,40 @@ import MorphingText from '@/components/MorphingText.vue'
       :text="[
         'Critical infastructure',
         'Server hosting',
-        'Software development',
         'menjanjikan tapi juga potensial bermasalah',
+        'Critical infrastructure',
+        'Server hosting',
+        'Cloud computing',
+        'Artificial Intelligence',
+        'Cybersecurity',
+        'Blockchain technology',
+        'Data analytics',
+        'Internet of Things (IoT)',
+        'Server hosting',
+        'Machine learning',
+        'Quantum computing',
       ]"
     /><span> ■</span>
     <br />
     <MorphingText
-      :text="['Innovation', 'Research and development', 'Software Prototyping', 'Software Design']"
+      :text="[
+        'Innovation',
+        'Research and development',
+        'Software Prototyping',
+        'Software Design',
+        'Virtual reality',
+        'Augmented reality',
+      ]"
+    /><span> ■</span>
+    <br />
+    <MorphingText
+      :text="[
+        'Consultancy',
+        'Advertising',
+        'Data analytics',
+        'Human resources management',
+        'Financial advisory',
+      ]"
     /><span> ■</span>
     <br />
     <MorphingText
@@ -28,7 +55,5 @@ import MorphingText from '@/components/MorphingText.vue'
         'Equal opportunities',
       ]"
     /><span> ■</span>
-    <br />
-    <MorphingText :text="['Consultancy', 'Cooking', 'Advertising']" /><span> ■</span>
   </div>
 </template>
