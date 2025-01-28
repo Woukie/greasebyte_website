@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import DistortText from './components/DistortText.vue'
+import MorphingText from './components/MorphingText.vue'
 import NewsScroller from './components/NewsScroller.vue'
 </script>
 
@@ -20,7 +21,29 @@ import NewsScroller from './components/NewsScroller.vue'
           <span>
             <span class="code-comment">// when compared with other retailers</span>
             <br />
-            <span> creativity *= 1.32; </span>
+            <span>
+              <MorphingText
+                :text="[
+                  'creativity',
+                  'innovation',
+                  'motivation',
+                  'style',
+                  'profit',
+                  'expertise',
+                  'quality',
+                  'security',
+                  'speed',
+                  'reliability',
+                  'efficiency',
+                  'sustainability',
+                  'flexibility',
+                  'responsibility',
+                  'trust',
+                  'experience',
+                ]"
+              />
+              *= 1.32;
+            </span>
           </span>
         </div>
         <br />
