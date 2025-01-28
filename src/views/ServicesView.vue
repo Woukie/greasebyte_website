@@ -7,26 +7,22 @@ import MorphingText from '@/components/MorphingText.vue'
     <MorphingText
       :text="[
         'Critical infastructure',
-        'Experience development',
+        'Server hosting',
         'menjanjikan tapi juga potensial bermasalah',
       ]"
     /><span> ■</span>
     <br />
-    <MorphingText
-      :text="[
-        'Innovation in individuality',
-        'Research and development',
-        'Improve the quality of life',
-      ]"
-    /><span> ■</span>
+    <MorphingText :text="['Innovation', 'Research and development']" /><span> ■</span>
     <br />
     <MorphingText
       :text="[
         'Eco friendly design',
         'Moderation in counter-terrorism',
-        'Diversity in nieche markets',
+        'Experience design',
+        'Web design',
       ]"
     /><span> ■</span>
     <br />
+    <MorphingText :text="['Consultancy', 'Cooking', 'Advertising']" /><span> ■</span>
   </div>
 </template>
