@@ -4,8 +4,12 @@ import MorphingText from '@/components/MorphingText.vue'
 
 <template>
   <div>
-    <span>Services<br />We specialise in four main categories</span>
-    <p></p>
+    <div class="main-fade"></div>
+    <p>Services</p>
+    <div class="code">
+      <span class="code-comment">We specialize in three specific areas<br /></span>
+    </div>
+
     <MorphingText
       :text="[
         'Critical infastructure',
@@ -23,18 +27,7 @@ import MorphingText from '@/components/MorphingText.vue'
         'Machine learning',
         'Quantum computing',
       ]"
-    /><span> ■</span>
-    <br />
-    <MorphingText
-      :text="[
-        'Innovation',
-        'Research and development',
-        'Software Prototyping',
-        'Software Design',
-        'Virtual reality',
-        'Augmented reality',
-      ]"
-    /><span> ■</span>
+    /><span> ╣</span>
     <br />
     <MorphingText
       :text="[
@@ -44,7 +37,7 @@ import MorphingText from '@/components/MorphingText.vue'
         'Human resources management',
         'Financial advisory',
       ]"
-    /><span> ■</span>
+    /><span> ╣</span>
     <br />
     <MorphingText
       :text="[
@@ -54,6 +47,6 @@ import MorphingText from '@/components/MorphingText.vue'
         'Policy design',
         'Equal opportunities',
       ]"
-    /><span> ■</span>
+    /><span> ╝</span>
   </div>
 </template>

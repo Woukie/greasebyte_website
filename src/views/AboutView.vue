@@ -4,6 +4,7 @@ import MorphingText from '@/components/MorphingText.vue'
 
 <template>
   <div>
+    <div class="main-fade"></div>
     <p>About</p>
     <p>We're pioneering the search for a digital utopia<br />Help us find it...</p>
 
