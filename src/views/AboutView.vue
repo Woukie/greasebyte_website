@@ -22,6 +22,17 @@ import MorphingText from '@/components/MorphingText.vue'
             'evaluate',
             'consume',
             'trade',
+            'consult',
+            'beat',
+            'deep fry',
+            'wash',
+            'donate',
+            'recycle',
+            'repair',
+            'fake',
+            'optimize',
+            'analyze',
+            'exchange',
           ]"
         />
         your
@@ -37,6 +48,12 @@ import MorphingText from '@/components/MorphingText.vue'
             'data',
             'privacy',
             'freedom',
+            'girlfriend',
+            'boyfriend',
+            'dreams',
+            'future',
+            'social media accounts',
+            'socks',
           ]"
         />
         for
@@ -55,6 +72,14 @@ import MorphingText from '@/components/MorphingText.vue'
             'peace',
             'justice',
             'happiness',
+            'divine purpose',
+            'pride',
+            'monopoly money',
+            'more pokemon cards',
+            'funkopops',
+            'cancer',
+            'dreams',
+            'dreamSMP membership',
           ]"
         />
       </span>
