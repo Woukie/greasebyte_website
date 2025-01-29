@@ -29,7 +29,6 @@ function morph(element: HTMLElement) {
   }
   element.innerText = text
 
-  console.log('unscrambling to', nextIndex)
   const unscrambleInterval = setInterval(() => {
     const innerText = element.innerText
     let text = ''
@@ -45,7 +44,6 @@ function morph(element: HTMLElement) {
 
     if (text === props.text[nextIndex]) {
       element.dataset.busy = 'false'
-      console.log('unscrambled', nextIndex)
       clearInterval(unscrambleInterval)
     }
   }, 100)
