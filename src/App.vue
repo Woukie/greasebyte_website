@@ -6,7 +6,6 @@ import NewsScroller from './components/NewsScroller.vue'
 </script>
 
 <template>
-  <!-- <img alt="Red alert" src="https://www.heavensgate.com/img/redalrt3.gif" /> -->
   <header>
     <NewsScroller />
   </header>
