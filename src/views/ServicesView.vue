@@ -16,28 +16,29 @@ import MorphingText from '@/components/MorphingText.vue'
         'Server hosting',
         'menjanjikan tapi juga potensial bermasalah',
         'Critical infrastructure',
-        'Server hosting',
         'Cloud computing',
         'Artificial Intelligence',
         'Cybersecurity',
         'Blockchain technology',
         'Data analytics',
         'Internet of Things (IoT)',
-        'Server hosting',
         'Machine learning',
-        'Quantum computing',
       ]"
-    /><span> ╣</span>
+    /><span>─┤</span>
     <br />
     <MorphingText
       :text="[
         'Consultancy',
         'Advertising',
-        'Data analytics',
         'Human resources management',
         'Financial advisory',
+        'Legal services',
+        'Public relations',
+        'Marketing',
+        'Recruitment',
+        'Training',
       ]"
-    /><span> ╣</span>
+    /><span>─┤</span>
     <br />
     <MorphingText
       :text="[
@@ -47,6 +48,6 @@ import MorphingText from '@/components/MorphingText.vue'
         'Policy design',
         'Equal opportunities',
       ]"
-    /><span> ╝</span>
+    /><span>─┘</span>
   </div>
 </template>
