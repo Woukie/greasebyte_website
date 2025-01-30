@@ -46,7 +46,7 @@ import NewsScroller from './components/NewsScroller.vue'
         </div>
         <br />
         <div>
-          <span class="solid-background">https://greasebyte.net</span>
+          <span>https://greasebyte.net</span>
           <br />
           ├─<RouterLink to="/"><DistortText text="/" /></RouterLink>
           <br />
