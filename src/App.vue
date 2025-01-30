@@ -15,7 +15,7 @@ import NewsScroller from './components/NewsScroller.vue'
   <div class="container">
     <nav class="navigator">
       <div class="navigator-content">
-        <div class="code">
+        <div class="code navigator-fade">
           <span>
             <span class="code-comment">// when compared with other retailers</span>
             <br />

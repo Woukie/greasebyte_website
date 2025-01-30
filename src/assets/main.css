@@ -34,11 +34,10 @@ body {
 
 .container {
   position: absolute;
-  width: min(75vw, 1400px);
+  width: min(75vw, 1300px);
   left: 50%;
-  transform: translateX(-50%);
-  top: 0;
-  bottom: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 a {
@@ -60,38 +59,39 @@ a:hover {
 }
 
 .navigator {
-  position: absolute;
   perspective: 1000px;
-  top: 0;
   left: 100px;
-  width: 700px;
-  height: 100%;
-  z-index: 1;
 }
 
 .navigator-content {
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  transform: rotateY(20deg) translateY(-50%);
+  transform: rotateY(20deg);
   transform-origin: 0% 0%;
 }
 
 .main {
   perspective: 1000px;
-  position: absolute;
-  height: 100%;
-  left: 0;
+  width: 100%;
   right: 100px;
+  z-index: 0;
+}
+
+@media screen and (min-width: 1500px) {
+  .main {
+    position: absolute;
+    top: 0;
+  }
+
+  .navigator {
+    position: relative;
+    width: 700px;
+    z-index: 1;
+  }
 }
 
 .main-content {
   text-align: right;
-  position: absolute;
-  width: 100%;
-  top: 50%;
   transform-origin: 100% 0%;
-  transform: rotateY(-30deg) translateY(-50%);
+  transform: rotateY(-30deg);
 }
 
 .main-fade {
@@ -99,7 +99,11 @@ a:hover {
   height: 100%;
   position: absolute;
   pointer-events: none;
-  background-image: linear-gradient(to right, var(--color-background) 30%, transparent 80%);
+  background-image: linear-gradient(to right, var(--color-background) 0%, transparent 50%);
+}
+
+.navigator-fade {
+  background-image: linear-gradient(to left, var(--color-background) 0%, transparent 30%);
 }
 
 .code {
