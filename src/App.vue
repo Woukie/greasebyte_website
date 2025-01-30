@@ -16,7 +16,6 @@ import NewsScroller from './components/NewsScroller.vue'
   <div class="container">
     <nav class="navigator">
       <div class="navigator-content">
-        <!-- <p>greasebyte</p> -->
         <div class="code">
           <span>
             <span class="code-comment">// when compared with other retailers</span>
@@ -69,13 +68,6 @@ import NewsScroller from './components/NewsScroller.vue'
       </div>
     </main>
   </div>
-
-  <!-- <footer>
-    <p>© 2025 GreaseByte</p>
-    <a href="https://int10h.org/oldschool-pc-fonts/fontlist/font?dos-v_re_jpn19"
-      ><DistortText text="Font"
-    /></a>
-  </footer> -->
 </template>
 
 <style scoped></style>
