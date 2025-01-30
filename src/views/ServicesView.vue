@@ -7,7 +7,7 @@ import MorphingText from '@/components/MorphingText.vue'
     <div class="main-fade"></div>
     <p>Services</p>
     <div class="code">
-      <span class="code-comment">We specialize in three specific areas<br /></span>
+      <span class="code-comment">We specialize in three areas<br /></span>
     </div>
 
     <MorphingText
