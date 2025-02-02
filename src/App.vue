@@ -13,7 +13,17 @@ import NewsScroller from './components/NewsScroller.vue'
   <div class="vignette"></div>
 
   <div class="container">
-    <nav class="navigator">
+    <main class="main">
+      <div class="main-content">
+        <router-view v-slot="{ Component }">
+          <transition name="slide-fade" mode="out-in">
+            <component :is="Component" />
+          </transition>
+        </router-view>
+      </div>
+    </main>
+
+    <nav class="navigator" style="pointer-events: none">
       <div class="navigator-content">
         <div class="code navigator-fade">
           <span>
@@ -48,25 +58,23 @@ import NewsScroller from './components/NewsScroller.vue'
         <div>
           <span>https://greasebyte.net</span>
           <br />
-          ├─<RouterLink to="/"><DistortText text="/" /></RouterLink>
+          ├─<RouterLink to="/" style="pointer-events: all"><DistortText text="/" /></RouterLink>
           <br />
-          ├─<RouterLink to="/about"><DistortText text="/about" /></RouterLink>
+          ├─<RouterLink to="/about" style="pointer-events: all"
+            ><DistortText text="/about"
+          /></RouterLink>
           <br />
-          └─<RouterLink to="/services"><DistortText text="/services" /></RouterLink>
+          └─<RouterLink to="/services" style="pointer-events: all"
+            ><DistortText text="/services"
+          /></RouterLink>
         </div>
       </div>
     </nav>
-
-    <main class="main">
-      <div class="main-content">
-        <router-view v-slot="{ Component }">
-          <transition name="slide-fade" mode="out-in">
-            <component :is="Component" />
-          </transition>
-        </router-view>
-      </div>
-    </main>
   </div>
+
+  <footer>
+    <NewsScroller style="bottom: 0" />
+  </footer>
 </template>
 
 <style scoped></style>

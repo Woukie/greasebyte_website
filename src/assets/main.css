@@ -68,7 +68,6 @@ a:hover {
   perspective: 1000px;
   width: 100%;
   right: 100px;
-  z-index: 0;
 }
 
 @media screen and (min-width: 1500px) {
@@ -80,7 +79,6 @@ a:hover {
   .navigator {
     position: relative;
     width: 700px;
-    z-index: 1;
   }
 }
 
@@ -144,3 +142,30 @@ a:hover {
   transform: translateY(-50vh);
   opacity: 0;
 }
+
+.news {
+  position: absolute;
+  width: 100vw;
+  background-color: var(--color-background-code);
+  color: var(--color-text-code-comment);
+  height: 36px;
+  overflow: hidden;
+  text-align: end;
+}
+/* 
+.news-text {
+  animation-name: scroller;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  position: inherit;
+}
+
+@keyframes scroller {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+} */
