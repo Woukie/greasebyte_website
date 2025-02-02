@@ -67,6 +67,7 @@ import MorphingText from '@/components/MorphingText.vue'
             'a pickled egg',
             'power',
             'knowledge',
+            'nothing',
             'security',
             'love',
             'peace',
