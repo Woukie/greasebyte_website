@@ -10,7 +10,7 @@
 }
 
 @font-face {
-  font-family: 'DOS';
+  font-family: 'DOS-JPN19';
   font-style: normal;
   font-weight: normal;
   src: url('@/assets/fonts/Mx437_DOS-V_re_JPN19.ttf');
@@ -25,7 +25,7 @@
 body {
   overflow-y: hidden;
   margin: 0;
-  font-family: DOS, monospace;
+  font-family: DOS-JPN19, monospace;
   font-size: 38px;
   line-height: 36px;
   color: var(--color-text);
