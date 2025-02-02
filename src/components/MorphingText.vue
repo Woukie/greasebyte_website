@@ -66,6 +66,6 @@ onUnmounted(() => {
 
 <template>
   <span ref="element">
-    {{ text[0] }}
+    {{ text[Math.floor(Math.random() * text.length)] }}
   </span>
 </template>
