@@ -65,7 +65,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <span ref="element">
+  <span ref="element" @mousedown="element ? morph(element) : ''">
     {{ text[Math.floor(Math.random() * text.length)] }}
   </span>
 </template>
