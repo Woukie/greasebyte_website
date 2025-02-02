@@ -14,9 +14,9 @@ function sendText(element: HTMLElement) {
   if (!element) return
 
   const span = document.createElement('span')
-  element.appendChild(span)
   span.innerText = selectedText
   span.style = 'position: absolute; white-space: pre;'
+  element.appendChild(span)
 
   const distance = span.offsetWidth + screen.width
   const keyframes = [
