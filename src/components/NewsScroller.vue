@@ -15,7 +15,8 @@ function sendText(element: HTMLElement) {
 
   const span = document.createElement('span')
   span.innerText = selectedText
-  span.style = 'position: absolute; white-space: pre;'
+  span.style.position = 'absolute'
+  span.style.whiteSpace = 'pre'
   element.appendChild(span)
 
   const distance = span.offsetWidth + screen.width
