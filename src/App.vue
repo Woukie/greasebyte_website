@@ -27,7 +27,7 @@ import NewsScroller from './components/NewsScroller.vue'
       <div class="navigator-content">
         <div class="code navigator-fade">
           <span>
-            <span class="code-comment">// when compared with other retailers</span>
+            <span class="code-comment">// when compared with other developers</span>
             <br />
             <span>
               <MorphingText
