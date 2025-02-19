@@ -6,7 +6,7 @@ import MorphingText from '@/components/MorphingText.vue'
   <div>
     <div class="main-fade"></div>
     <p>About</p>
-    <p>We're pioneering the search for a digital utopia<br />Help us find it...</p>
+    <p>We're making special games for special people<br />...</p>
 
     <!-- Mad libs -->
     <div class="code">
@@ -22,11 +22,13 @@ import MorphingText from '@/components/MorphingText.vue'
             'evaluate',
             'consume',
             'trade',
+            'rent out',
             'consult',
             'beat',
             'deep fry',
             'wash',
             'donate',
+            'morgage',
             'recycle',
             'repair',
             'fake',
@@ -46,6 +48,7 @@ import MorphingText from '@/components/MorphingText.vue'
             'community',
             'body',
             'data',
+            'discord account',
             'privacy',
             'freedom',
             'girlfriend',
