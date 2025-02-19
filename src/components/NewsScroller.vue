@@ -14,7 +14,7 @@ const speed = 0.3
 
 const element = ref<HTMLElement | null>(null)
 
-function sendText(element: HTMLElement, startMiddle: boolean) {
+function sendText(element: HTMLElement) {
   const selectedText = text[Math.floor(Math.random() * text.length)]
 
   if (!element) return
@@ -26,11 +26,7 @@ function sendText(element: HTMLElement, startMiddle: boolean) {
   element.appendChild(span)
 
   const endPosition = span.offsetWidth + element.offsetWidth
-  let startPosition = 0
-
-  if (startMiddle) {
-    startPosition = endPosition * 0.5
-  }
+  const startPosition = 0
 
   const distance = endPosition - startPosition
   console.log(distance / speed)
@@ -51,13 +47,13 @@ function sendText(element: HTMLElement, startMiddle: boolean) {
   span.animate(keyframes, timings).addEventListener('finish', () => {
     window.removeEventListener('resize', cancelAnimation, false)
     span.remove()
-    sendText(element, false)
+    sendText(element)
   })
 }
 
 onMounted(() => {
   if (element.value) {
-    sendText(element.value, true)
+    sendText(element.value)
   }
 })
 </script>
