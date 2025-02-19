@@ -64,8 +64,8 @@ import NewsScroller from './components/NewsScroller.vue'
             ><DistortText text="/about"
           /></RouterLink>
           <br />
-          └─<RouterLink to="/services" style="pointer-events: all"
-            ><DistortText text="/services"
+          └─<RouterLink to="/support" style="pointer-events: all"
+            ><DistortText text="/support"
           /></RouterLink>
         </div>
       </div>
