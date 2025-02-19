@@ -14,9 +14,8 @@ const speed = 0.3
 
 const element = ref<HTMLElement | null>(null)
 
-function sendText(element: HTMLElement, randomizedStart: boolean) {
+function sendText(element: HTMLElement, startMiddle: boolean) {
   const selectedText = text[Math.floor(Math.random() * text.length)]
-  console.log(selectedText)
 
   if (!element) return
 
@@ -26,19 +25,21 @@ function sendText(element: HTMLElement, randomizedStart: boolean) {
   span.style.whiteSpace = 'pre'
   element.appendChild(span)
 
-  const distance = span.offsetWidth + screen.width
-  let start = { transform: 'translateX(0%)'}
-  let timings = {duration: distance / speed, iterations: 1}
-  const end = { transform: 'translateX(-'+ distance +'px)' }
+  const endPosition = span.offsetWidth + element.offsetWidth
+  let startPosition = 0
 
-  console.log(distance)
-
-  if (randomizedStart) {
-    const startOffset = distance * Math.random()
-    start = {transform: 'translateX(-'+ startOffset +'px)'}
-    timings = {duration: (distance - startOffset) / speed, iterations: 1}
+  if (startMiddle) {
+    startPosition = endPosition * 0.5
   }
 
+  const distance = endPosition - startPosition
+  console.log(distance / speed)
+
+  const timings = { duration: distance / speed, iterations: 1 }
+  const keyframes = [
+    { transform: 'translateX(-'+ startPosition +'px'},
+    { transform: 'translateX(-'+ endPosition +'px)' },
+  ]
 
   function cancelAnimation() {
     span.getAnimations().forEach((animation) => {
@@ -47,7 +48,7 @@ function sendText(element: HTMLElement, randomizedStart: boolean) {
   }
 
   window.addEventListener('resize', cancelAnimation)
-  span.animate([start, end], timings).addEventListener('finish', () => {
+  span.animate(keyframes, timings).addEventListener('finish', () => {
     window.removeEventListener('resize', cancelAnimation, false)
     span.remove()
     sendText(element, false)
